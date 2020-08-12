@@ -1,0 +1,9 @@
+{ 
+    "name": "Random.sh",
+    "exec_cmd": "bash scripts/random.sh",
+    "outputs": {
+        "good": 0,
+        "bad": 1
+    }
+
+}

@@ -1,0 +1,10 @@
+{ 
+    "name": "Always good",
+    "exec_cmd": "bash scripts/Always_777.sh",
+    "outputs": {
+        "type": "binary",
+        "good": 777,
+        "bad": 1
+    }
+
+}

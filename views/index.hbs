@@ -1,0 +1,29 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<p>Test JSON Data:</p>
+
+ <table style="width:100%">
+  <tr>
+    <th>Status</th>
+    <th>Name</th>
+    <th>STDOUT</th>
+    <th>LastRunDate</th>
+  </tr>
+
+  {{#each data}}
+  <tr>
+    {{#if status.good}}
+    <td><img src="/images/good.png" width="35" height="35"></td>
+    {{else if status.bad}}
+    <td><img src="/images/bad.png" width="35" height="35"></td>
+    {{else}}
+    <td><img src="/images/Undefined.png" width="35" height="35"></td>
+    {{/if}}
+    <td>{{name}}</td>
+    <td>{{stdout}}</td>
+    <td>{{runtime}}</td>
+  </tr>
+  {{/each}}
+
+</table> 
