@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Environment=NODE_PORT=3000
 Type=simple
-User=ubuntu
+User=root
 WorkingDirectory=/home/ubuntu/node-project
 ExecStart=/usr/bin/npm start --production
 ExecStop=/usr/bin/npm stop --production

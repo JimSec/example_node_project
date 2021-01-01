@@ -24,9 +24,8 @@ function eval_output(json) {
         status['bad'] = 1;
     }
     else {
+	console.log("undefined output");
         status['undef'] = 1;
-        //console.log("output out of defined scope");
-        //status = -1;
     }
 
     out.name = json['name'];
